@@ -1,0 +1,42 @@
+.center {
+  width: 40%;
+  margin: 50px auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.list > li {
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.list .item-enter-active {
+  animation: fadeIn 1s ease-out;
+}
+
+.list .item-exit-active {
+  animation: fadeOut 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
